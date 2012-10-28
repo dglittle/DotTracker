@@ -1,0 +1,12 @@
+
+Orange Dot Tracking Algorithm
+
+Consider a "tracker" to be an object capable of tracking a moving dot in a video sequence.
+
+The tracker is defined by a center, a color, and a size:
+center - the x,y position of the tracker within a frame of video; this variable is updated every frame
+color - the color that the tracker is tracking; this variable is initialized to the color of the pixel that the user clicks on when "placing" a tracker. This variable NEVER CHANGES once it is initialized.
+size - the algorithm essentially examines a square set of pixels centered around the "center" of the tracker; the "size" variable defines the size of this square.
+
+The crux of the tracking algorithm is an update function which centers the tracker on a splotch of color.
+
